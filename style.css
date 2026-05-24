@@ -1,0 +1,306 @@
+* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family:
+          "Inter",
+          -apple-system,
+          BlinkMacSystemFont,
+          "Segoe UI",
+          Roboto,
+          Helvetica,
+          Arial,
+          sans-serif;
+        background-color: #ffffff;
+        color: #1a1a2e;
+        line-height: 1.5;
+        scroll-behavior: smooth;
+      }
+
+      .container {
+        max-width: 1280px;
+        margin: 0 auto;
+        padding: 0 24px;
+      }
+
+      /* Typography */
+      h1 {
+        font-size: 52px;
+        font-weight: 800;
+        line-height: 1.2;
+        letter-spacing: -0.02em;
+        background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+      }
+
+      h2 {
+        font-size: 36px;
+        font-weight: 700;
+        letter-spacing: -0.01em;
+        margin-bottom: 16px;
+        color: #1a1a2e;
+      }
+
+      h3 {
+        font-size: 24px;
+        font-weight: 600;
+        margin-bottom: 12px;
+      }
+
+      .section {
+        padding: 80px 0;
+        border-bottom: 1px solid #f0f0f0;
+      }
+
+      .section-gray {
+        background-color: #f9fafb;
+      }
+
+      /* Buttons */
+      .btn {
+        display: inline-block;
+        padding: 14px 32px;
+        border-radius: 40px;
+        font-weight: 600;
+        text-decoration: none;
+        transition: all 0.3s ease;
+        font-size: 16px;
+        cursor: pointer;
+        border: none;
+      }
+
+      .btn-primary {
+        background: #6366f1;
+        color: white;
+        box-shadow: 0 4px 12px rgba(99, 102, 241, 0.25);
+      }
+
+      .btn-primary:hover {
+        background: #4f46e5;
+        transform: translateY(-2px);
+        box-shadow: 0 8px 20px rgba(99, 102, 241, 0.35);
+      }
+
+      .btn-outline {
+        background: transparent;
+        color: #6366f1;
+        border: 2px solid #6366f1;
+      }
+
+      .btn-outline:hover {
+        background: #6366f1;
+        color: white;
+      }
+
+      /* Hero */
+      .hero {
+        padding: 100px 0 80px;
+      }
+
+      .hero-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 60px;
+        align-items: center;
+      }
+
+      .hero-badge {
+        background: #e0e7ff;
+        color: #4f46e5;
+        padding: 6px 14px;
+        border-radius: 40px;
+        font-size: 14px;
+        font-weight: 600;
+        display: inline-block;
+        margin-bottom: 24px;
+      }
+
+      .hero p {
+        font-size: 18px;
+        color: #475569;
+        margin: 24px 0 32px;
+      }
+
+      .demo-box {
+        background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+        border-radius: 24px;
+        padding: 32px;
+        box-shadow: 0 20px 35px -12px rgba(0, 0, 0, 0.1);
+        border: 1px solid #e2e8f0;
+      }
+
+      .demo-input {
+        width: 100%;
+        padding: 16px;
+        border: 2px solid #e2e8f0;
+        border-radius: 16px;
+        font-size: 16px;
+        margin-bottom: 20px;
+        font-family: inherit;
+      }
+
+      .demo-output {
+        background: white;
+        border-radius: 16px;
+        padding: 20px;
+        margin-top: 20px;
+        border-left: 4px solid #6366f1;
+        font-size: 14px;
+        display: none;
+      }
+
+      /* Cards */
+      .cards-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 32px;
+        margin-top: 48px;
+      }
+
+      .card {
+        background: white;
+        border-radius: 24px;
+        padding: 32px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        transition: transform 0.2s;
+        border: 1px solid #edf2f7;
+      }
+
+      .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+      }
+
+      .icon {
+        font-size: 40px;
+        margin-bottom: 20px;
+      }
+
+      /* Feature list */
+      .feature-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
+        margin: 40px 0;
+      }
+
+      .feature-item {
+        background: #f8fafc;
+        padding: 20px;
+        border-radius: 20px;
+        text-align: center;
+        font-weight: 500;
+      }
+
+      /* Table */
+      .competitors-table {
+        overflow-x: auto;
+        margin-top: 40px;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        background: white;
+        border-radius: 20px;
+        overflow: hidden;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+      }
+
+      th,
+      td {
+        padding: 16px;
+        text-align: left;
+        border-bottom: 1px solid #e2e8f0;
+      }
+
+      th {
+        background: #f1f5f9;
+        font-weight: 600;
+      }
+
+      .check {
+        color: #10b981;
+        font-weight: bold;
+      }
+
+      /* Team */
+      .team-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 32px;
+        margin-top: 48px;
+      }
+
+      .team-card {
+        text-align: center;
+        background: white;
+        border-radius: 24px;
+        padding: 24px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      }
+
+      .team-photo {
+        width: 120px;
+        height: 120px;
+        background: linear-gradient(135deg, #6366f1, #a855f7);
+        border-radius: 50%;
+        margin: 0 auto 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 48px;
+        font-weight: bold;
+      }
+
+      /* Price */
+      .price-card {
+        background: white;
+        border-radius: 32px;
+        padding: 48px;
+        text-align: center;
+        max-width: 500px;
+        margin: 0 auto;
+        box-shadow: 0 20px 35px -12px rgba(0, 0, 0, 0.1);
+        border: 1px solid #e2e8f0;
+      }
+      .price {
+        font-size: 56px;
+        font-weight: 800;
+        color: #6366f1;
+        margin: 20px 0;
+      }
+
+      /* Footer */
+      footer {
+        background: #1a1a2e;
+        color: #94a3b8;
+        padding: 48px 0;
+        text-align: center;
+      }
+
+      /* Responsive */
+      @media (max-width: 768px) {
+        h1 {
+          font-size: 36px;
+        }
+        h2 {
+          font-size: 28px;
+        }
+        .hero-grid {
+          grid-template-columns: 1fr;
+          gap: 40px;
+        }
+        .section {
+          padding: 60px 0;
+        }
+        .container {
+          padding: 0 20px;
+        }
+      }
